@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbb"
+    tools:context="com.example.dk47.myapp.Email_1">
+    <include layout="@layout/toolbar"
+        android:id="@+id/myToolbar"
+        />
+
+    <ImageView
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/wb"
+        android:tint="#071422"
+        android:nestedScrollingEnabled="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="#00555555"
+        android:src="@drawable/dot"
+        android:layout_marginLeft="-35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editText"
+        android:hint="Enter your Email Id."
+        android:textColor="#acd7d7d7"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="#acd7d7d7"
+        android:paddingLeft="14dp"
+        android:background="#74303d66"
+        android:layout_marginBottom="41dp"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentStart="true"
+/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editText2"
+        android:paddingLeft="14dp"
+        android:hint="Enter your Password"
+        android:textColor="#acd7d7d7"
+        android:textColorHint="#acd7d7d7"
+        android:background="#74303d66"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/button3"
+        android:layout_marginBottom="37dp"
+        android:layout_alignParentStart="true"
+        android:password="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with Email...."
+        android:id="@+id/textView4"
+        android:textColor="#daa6a5a5"
+        android:textSize="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/myToolbar"
+        android:layout_alignStart="@+id/editText2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button3"
+        android:background="@drawable/button_state"
+        android:textColor="#daa6a5a5"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/wb"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-8dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="15dp"
+        android:textColor="#daa6a5a5"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login via Phone no."
+        android:textColor="#daa6a5a5"
+        android:layout_marginRight="20dp"
+        android:textSize="16dp"
+
+        android:id="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#daa6a5a5"
+        android:textSize="18dp"
+
+        android:id="@+id/textView7"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/editText2" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbb"
+    tools:context="com.example.dk47.myapp.Phone_1">
+    <include layout="@layout/toolbar"
+        android:id="@id/myToolbar"/>
+
+    <ImageView
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/wb"
+        android:tint="#071422"
+        android:nestedScrollingEnabled="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editText5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="14dp"
+        android:textColor="#cda6a5a5"
+        android:hint="Enter your Phone No."
+        android:textColorHint="#aca6a5a5"
+        android:background="#74303d66"
+        android:layout_above="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login via Phone No...."
+        android:id="@+id/textView4"
+        android:textColor="#daa6a5a5"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/myToolbar"
+        android:layout_alignStart="@+id/editText5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send OTP"
+        android:id="@+id/button5"
+        android:textColor="#daa6a5a5"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_state"/>
+
+    <include layout="@layout/back"
+        android:id="@id/textView7"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignStart="@+id/editText5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login via Email Id"
+        android:textColor="#daa6a5a5"
+        android:layout_marginRight="20dp"
+        android:textSize="16dp"
+        android:id="@+id/textView8"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp" />
+
+</RelativeLayout>

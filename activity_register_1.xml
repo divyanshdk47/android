@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbb"
+    tools:context="com.example.dk47.myapp.Register_1">
+    <include layout="@layout/toolbar"
+        android:id="@id/myToolbar"/>
+
+    <ImageView
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/wb"
+        android:tint="#071422"
+        android:nestedScrollingEnabled="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="14dp"
+        android:hint="Enter your Name"
+        android:textColorHint="#aca6a5a5"
+        android:background="#74303d66"
+        android:textColor="#cda6a5a5"
+        android:layout_marginTop="102dp"
+        android:layout_below="@id/myToolbar"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="14dp"
+        android:textColor="#cda6a5a5"
+        android:hint="Enter your Email Id."
+        android:textColorHint="#aca6a5a5"
+        android:background="#74303d66"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/phone"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="14dp"
+        android:textColor="#cda6a5a5"
+        android:hint="Enter your Phone No."
+        android:textColorHint="#aca6a5a5"
+        android:background="#74303d66"
+        android:layout_below="@+id/email"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/pass"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="14dp"
+        android:textColor="#cda6a5a5"
+        android:hint="Enter your Password"
+        android:textColorHint="#aca6a5a5"
+        android:background="#74303d66"
+        android:layout_below="@+id/phone"
+        android:layout_alignParentStart="true"
+        android:password="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#acbbbbbb"
+        android:id="@+id/button4"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/button_state"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#daa6a5a5"
+        android:textSize="18dp"
+
+        android:id="@+id/textView7"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/pass"
+        android:layout_marginTop="-5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Here...."
+        android:id="@+id/textView4"
+        android:textColor="#daa6a5a5"
+        android:textSize="30dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@id/myToolbar"
+        android:layout_alignStart="@+id/name" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="#00555555"
+        android:src="@drawable/dot"
+        android:layout_marginLeft="-35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="38dp"
+        android:layout_alignBottom="@+id/myToolbar"
+        />
+
+</RelativeLayout>

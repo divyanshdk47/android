@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dk47.myapp.MainActivity"
+    android:background="@drawable/bbb">
+
+    <android.support.v7.widget.Toolbar android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="#1f1f1f"
+        android:id="@+id/myToolbar">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/wb"
+        android:tint="#08192e"
+        android:nestedScrollingEnabled="false"
+        android:backgroundTint="#2402132f"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="187dp"
+        android:layout_height="45dp"
+        android:text="Login via Email"
+        android:id="@+id/button"
+        android:background="@drawable/main_button_state"
+        android:textSize="18dp"
+        android:textColor="#e7e6e6"
+        android:shadowColor="#030303"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        android:layout_width="187dp"
+        android:layout_height="45dp"
+        android:text="Login via Phone No."
+        android:id="@+id/button2"
+        android:background="@drawable/main_button_state"
+        android:textSize="15dp"
+        android:textColor="#e7e6e6"
+        android:singleLine="false"
+        android:layout_above="@+id/textView3"
+        android:layout_alignStart="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:id="@+id/textView"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:fontFamily="roboto"
+        android:textColor="#C0BABA"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:id="@+id/textView2"
+        android:textSize="24dp"
+        android:fontFamily="roboto"
+        android:textColor="#C0BABA"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/wb"
+        android:layout_below="@+id/myToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-35dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register here"
+        android:id="@+id/textView3"
+        android:textColor="#C0BABA"
+        android:layout_marginTop="28dp"
+        android:textColorLink="#e26f6f"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:background="#00555555"
+        android:layout_alignBottom="@+id/myToolbar"
+        android:layout_alignRight="@+id/myToolbar"
+        android:layout_alignEnd="@+id/myToolbar"
+        android:src="@drawable/dot"
+        android:layout_toRightOf="@+id/button" />
+
+
+</RelativeLayout>
+

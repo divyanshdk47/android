@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbb"
+    tools:context="com.example.dk47.myapp.torch">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/myToolbar" />
+
+
+
+    <include layout="@layout/logout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:layout_marginTop="18dp"
+        android:layout_alignEnd="@+id/torchpic"
+        android:layout_marginRight="45dp"
+        android:id="@+id/include4" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="#00555555"
+        android:src="@drawable/dot"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignEnd="@+id/torchpic" />
+
+
+    <ImageButton
+        android:id="@+id/torchpic"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00555555"
+        android:src="@drawable/g2" />
+
+    <include layout="@layout/back"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/back" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbb"
+    tools:context="com.example.dk47.myapp.Continue">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include2">
+    </include>
+
+    <include layout="@layout/back"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/include" />
+
+    <include layout="@layout/logout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/include3"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imageButton2" />
+
+    <ImageView
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/wb"
+        android:tint="#08192e"
+        android:nestedScrollingEnabled="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="#00555555"
+        android:src="@drawable/dot"
+        android:layout_marginRight="-5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/success"
+        android:layout_marginTop="10dp"/>
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:src="@drawable/wb"
+        android:layout_marginBottom="90dp"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/include"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_state"
+        android:textColor="#cacaca"
+        android:text="Continue"
+        android:elevation="25dp"
+        android:id="@+id/conti"
+        android:layout_above="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Have Successfully Logged In...."
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="0dp"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="#cacaca"
+        android:layout_below="@+id/include2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To My App "
+        android:textSize="30dp"
+        android:textColor="#cacaca"
+        android:textStyle="bold"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_toEndOf="@+id/include"
+        android:id="@+id/wel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brought to you by "
+        android:textSize="18dp"
+        android:textColor="#cacaca"
+        android:layout_above="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/by" />
+
+
+</RelativeLayout>
