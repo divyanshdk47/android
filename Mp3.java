@@ -1,4 +1,4 @@
-package com.example.dk47.MyApp;
+package com.example.dk47.myapp;
 
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
